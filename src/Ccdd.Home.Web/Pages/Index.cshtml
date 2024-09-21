@@ -17,289 +17,106 @@
     <abp-style src="/Pages/Index.css" />
 }
 
-<div class="row mb-3">
-    <div class="col-xl-6 col-12 d-flex">
-        <div class="card h-lg-100 w-100 overflow-hidden">
-            <div class="card-body">
-                <div class="starting-content pe-5">
-                    @if (!CurrentUser.IsAuthenticated)
-                    {
-                        <h3>@L["Welcome"]</h3>
-                        <p class="lead text-muted mb-2">@L["LongWelcomeMessage"]</p>
-                        <a href="/Account/Login" class="btn btn-primary mb-4"><i class="fa-solid fa-right-to-bracket me-1"></i><span>@L["Login"]</span></a>
-                    }
-
-                    <h4>Getting Started</h4>
-                    <p class="text-muted mb-2">Learn how to create and run
-                        a
-                        new web application using the application startup
-                        template.</p>
-                    <a href="https://abp.io/docs/latest/getting-started" class="btn btn-brand mb-2" target="_blank">Getting
-                        Started</a>
-
-                    <h4>Web Application Development Tutorial</h4>
-                    <p class="text-muted mb-2">Learn how to build an ABP based
-                        web
-                        application named Acme.BookStore.</p>
-                    <a href="https://abp.io/docs/latest/tutorials/book-store/part-1?UI=MVC&DB=EF" class="btn btn-primary soft mb-2" target="_blank">Explore Tutorial</a>
-
-                    <h4>Customize Lepton Theme</h4>
-                    <p class="text-muted mb-2">Learn how to customize LeptonX
-                        Theme
-                        as you wish.</p>
-                    <a href="https://abp.io/docs/commercial/latest/themes/lepton-x/index" class="btn btn-primary soft mb-5 mb-xl-0" target="_blank">Customize Lepton</a>
-                </div>
-                <img class="card-bg-image" src="/images/getting-started/bg-01.png">
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-md-6 d-flex">
-        <div class="row">
-            <div class="col-12 d-flex">
-                <div class="card overflow-hidden">
-                    <div class="card-body pb-0">
-                        <div class="abp-support abp-logo mb-2"></div>
-                        <p class="text-muted mb-2">You can check for
-                            similar problems and solutions, or open a
-                            new topic to discuss your specific issue.</p>
-                        <a href="https://abp.io/support/questions" class="btn
-                            btn-brand soft" target="_blank">Visit Support</a>
-                        <img class="" src="/images/getting-started/img-support.png">
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 d-flex">
-                <div class="card h-md-100 overflow-hidden">
-                    <div class="card-body pb-0">
-                        <div class="abp-blog abp-logo mb-2"></div>
-                        <p class="text-muted mb-2">You can find content
-                            on .NET development, cross-platform, ASP.NET
-                            application templates, ABP-related news, and
-                            more.</p>
-                        <a href="https://abp.io/blog" class="btn
-                            btn-brand soft" target="_blank">Visit Blog</a>
-
-                        <img style="margin-bottom: -24px;" src="/images/getting-started/img-blog.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-3 col-md-6 d-flex">
-        <div class="card h-100 overflow-hidden">
-            <div class="card-body">
-                <div class="abp-community abp-logo mb-2"></div>
-                <p class="lead text-muted">A unique community platform
-                    for <span class="fw-bold">ABP Lovers!</span></p>
-                <p class="text-muted mb-2">Explore all ABP users'
-                    experiences with the ABP Framework, discover
-                    articles and videos on how to use ABP, and join
-                    raffles for a chance to win surprise gifts!</p>
-                <a class="btn btn-brand soft mb-3" href="https://abp.io/community/" target="_blank">Join ABP
-                    Community</a>
-            </div>
-            <img class="mt-3" src="/images/getting-started/img-community.png">
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xl-3 col-lg-4">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title text-body">More from ABP.IO</div>
-            </div>
-            <div class="card-body pt-0">
-
-                <div>
-                    <table class="table mb-0">
-                        <tbody>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <div class="rounded-circle me-2
-                                        flex-center bg-brand soft" style="width: 20px; height:
-                                        20px;"><i class="bi bi-check fs-4"></i></div>
-                                    <div> Latest Release Logs </div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://github.com/abpframework/abp/releases" target="_blank">
-                                        <i class="bi
-                                            bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <div class="rounded-circle me-2
-                                        flex-center bg-brand soft" style="width: 20px; height:
-                                        20px;"><i class="bi bi-check fs-4"></i></div>
-                                    <div> Video Courses </div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://abp.io/video-courses/essentials" target="_blank">
-                                        <i class="bi
-                                            bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <div class="rounded-circle me-2
-                                        flex-center bg-brand soft" style="width: 20px; height:
-                                        20px;"><i class="bi bi-check fs-4"></i></div>
-                                    <div> Samples </div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://abp.io/docs/latest/Samples/Index" target="_blank">
-                                        <i class="bi
-                                            bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <div class="rounded-circle me-2
-                                        flex-center bg-brand soft" style="width: 20px; height:
-                                        20px;"><i class="bi bi-check fs-4"></i></div>
-                                    <div> Books </div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://abp.io/books" target="_blank">
-                                        <i class="bi
-                                            bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex border-bottom-0">
-                                    <div class="rounded-circle me-2
-                                        flex-center bg-brand soft" style="width: 20px; height:
-                                        20px;"><i class="bi bi-check fs-4"></i></div>
-                                    <div> FAQ </div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25
-                                    border-bottom-0">
-                                    <a href="https://abp.io/faq" target="_blank">
-                                        <i class="bi
-                                            bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xl-6 col-lg-8 d-flex">
-        <div class="card">
-            <div class="card-body d-flex">
-                <div class="row align-items-center">
-                    <div class="col-md-8">
-                        <p class="text-muted mb-0">THE OFFICIAL GUIDE</p>
-                        <h3>Mastering ABP Framework</h3>
-                        <p class="text-muted">Written by the creator of the ABP
-                            Framework, this book will help you gain a complete
-                            understanding of the framework
-                            and modern web application development techniques.</p>
-                        <div class="d-md-flex mb-2 mb-md-0">
-                            <a href="https://www.amazon.com/gp/product/B097Z2DM8Q" target="_blank" class="btn btn-primary soft
-                                me-md-2 mb-2 mb-md-0">
-                                Buy on Amazon US
-                            </a>
-                            <a href="https://www.packtpub.com/product/mastering-abp-framework/9781801079242" target="_blank" class="btn btn-primary soft mb-2
-                                mb-md-0">
-                                Buy on PACKT
-                            </a>
+<section class="pb-5 mb-4">
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row g-md-5">
+                <div class="col-lg-3 col-md-5 col-12">
+                    <div class="row">
+                        <div class="col-6 col-md-12 col-lg-11 mx-auto p-4 ms-md-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 512 512" fill="none">
+                                <path opacity="0.5" d="M406 466H356.805L346.805 436H165.195L155.195 466H106C97.7109 466 91 472.711 91 481C91 489.289 97.7109 496 106 496H406C414.289 496 421 489.289 421 481C421 472.711 414.289 466 406 466Z" fill="#292D33" />
+                                <path d="M406 98C393.308 98 383 108.308 383 121C383 133.692 393.308 144 406 144C418.692 144 429 133.692 429 121C429 108.308 418.692 98 406 98Z" fill="#3E9FCB" />
+                                <path opacity="0.8" d="M466 16H45C20.1875 16 0 36.1875 0 61V316H91V271C91 262.711 97.7109 256 106 256H129.176C130.727 251.637 132.5 247.355 134.508 243.152L118.113 226.746C112.254 220.887 112.254 211.395 118.113 205.535L160.535 163.113C166.395 157.254 175.887 157.254 181.746 163.113L198.152 179.52C202.355 177.512 206.633 175.727 211 174.172V151C211 142.711 217.711 136 226 136H286C294.289 136 301 142.711 301 151V174.176C305.363 175.727 309.645 177.516 313.848 179.52L330.254 163.113C336.113 157.258 345.605 157.258 351.465 163.113L393.887 205.535C399.746 211.395 399.746 220.891 393.887 226.746L377.492 243.152C379.5 247.359 381.273 251.637 382.824 256H406C414.289 256 421 262.711 421 271V316H512V61C512 36.1875 490.812 16 466 16ZM406 166C381.188 166 361 145.812 361 121C361 96.1875 381.188 76 406 76C430.812 76 451 96.1875 451 121C451 145.812 430.812 166 406 166Z" fill="#6457C1" />
+                                <path d="M211 301C211 306.184 212.195 311.184 213.91 316H298.09C299.805 311.184 301 306.184 301 301C301 276.188 280.812 256 256 256C231.184 256 211 276.188 211 301Z" fill="#B84297" />
+                                <path d="M154.777 274.75C153.066 281.371 147.09 286 140.246 286H121V316H182.973C181.965 311.059 181 306.094 181 301C181 259.648 214.648 226 256 226C297.352 226 331 259.648 331 301C331 306.094 330.035 311.059 329.027 316H391V286H371.754C364.91 286 358.934 281.371 357.223 274.75C354.832 265.449 351.098 256.453 346.117 248.016C342.645 242.129 343.598 234.629 348.43 229.793L362.07 216.141L340.859 194.93L327.207 208.582C322.371 213.434 314.855 214.398 308.969 210.883C300.547 205.918 291.566 202.168 282.25 199.777C275.629 198.066 271 192.09 271 185.246V166H241V185.246C241 192.09 236.371 198.066 229.75 199.777C220.434 202.168 211.453 205.918 203.031 210.883C197.172 214.398 189.641 213.434 184.793 208.582L171.141 194.93L149.93 216.141L163.57 229.793C168.402 234.629 169.355 242.129 165.883 248.016C160.902 256.453 157.168 265.449 154.777 274.75Z" fill="#B84297" />
+                                <path opacity="0.9" d="M0 361C0 385.812 20.1875 406 45 406H466C490.812 406 512 385.812 512 361V346H0V361Z" fill="#292D33" />
+                            </svg>
                         </div>
                     </div>
-                    <div class="col">
-                        <img src="/images/getting-started/book.png">
+                </div>
+                <div class="col-lg-9 col-md-7 col-12 d-flex align-items-center">
+                    <div class="ps-md-3 text-center text-md-start">
+                        <h1>澄登科技</h1>
+                        <p class="pd-title mb-4">澄登科技在食品、医药、制造等行业拥有广泛的技术知识和丰富的业务经验，能够应对各种复杂的技术挑战。与各行业领先企业紧密合作，了解市场需求和趋势，公司的产品更加符合市场需求。</p>
+                        <p>澄登科技能提供各行业全方面软件解决方案、硬件产品、云服务、数据分析等，并已经成功实施了诸多项目。</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-    <div class="col-xl-3 col-lg-4">
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title text-body">Follow us on Social Media</div>
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-12  d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-primary mb-4">
+                        <svg width="60" height="60" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                                <path d="M8,3 L8,3.5 C8,4.32842712 8.67157288,5 9.5,5 L14.5,5 C15.3284271,5 16,4.32842712 16,3.5 L16,3 L18,3 C19.1045695,3 20,3.8954305 20,5 L20,21 C20,22.1045695 19.1045695,23 18,23 L6,23 C4.8954305,23 4,22.1045695 4,21 L4,5 C4,3.8954305 4.8954305,3 6,3 L8,3 Z" fill="currentColor" opacity="0.3"></path>
+                                <path d="M11,2 C11,1.44771525 11.4477153,1 12,1 C12.5522847,1 13,1.44771525 13,2 L14.5,2 C14.7761424,2 15,2.22385763 15,2.5 L15,3.5 C15,3.77614237 14.7761424,4 14.5,4 L9.5,4 C9.22385763,4 9,3.77614237 9,3.5 L9,2.5 C9,2.22385763 9.22385763,2 9.5,2 L11,2 Z" fill="currentColor"></path>
+                                <rect fill="currentColor" opacity="0.3" x="10" y="9" width="7" height="2" rx="1"></rect>
+                                <rect fill="currentColor" opacity="0.3" x="7" y="9" width="2" height="2" rx="1"></rect>
+                                <rect fill="currentColor" opacity="0.3" x="7" y="13" width="2" height="2" rx="1"></rect>
+                                <rect fill="currentColor" opacity="0.3" x="10" y="13" width="7" height="2" rx="1"></rect>
+                                <rect fill="currentColor" opacity="0.3" x="7" y="17" width="2" height="2" rx="1"></rect>
+                                <rect fill="currentColor" opacity="0.3" x="10" y="17" width="7" height="2" rx="1"></rect>
+                            </g>
+                        </svg>
+                    </div>
+                    <h6 class="font-weight-bold mb-3">卓越标准与合规服务</h6>
+                    <p class="text-muted mb-0">我们致力于帮助企业实现卓越运营，通过专业的标准制定和规范遵循服务，确保您的业务流程符合行业最佳实践及法规要求。我们的专家团队精通全球各类标准框架，包括ISO系列标准、行业特定准则以及地区性法律法规。</p>
+                </div>
             </div>
-            <div class="card-body pt-0">
-                <div>
-                    <table class="table mb-0">
-                        <tbody>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <img src="/images/getting-started/x-white.svg" class="me-2" style="background-color: black;">
-                                    <div>X.com</div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://twitter.com/abpframework" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <img src="/images/getting-started/discord.svg" class="me-2">
-                                    <div>Discord</div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://abp.io/community/discord" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <img src="/images/getting-started/stack-overflow.svg" class="me-2">
-                                    <div>Stack Overflow</div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://stackoverflow.com/questions/tagged/abp" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex">
-                                    <img src="/images/getting-started/youtube.svg" class="me-2">
-                                    <div>YouTube</div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25">
-                                    <a href="https://www.youtube.com/@@Volosoft" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ps-0 d-flex border-bottom-0">
-                                    <img src="/images/getting-started/instagram.svg" class="me-2">
-                                    <div>Instagram</div>
-                                </td>
-                                <td class="text-end pe-0 opacity-25
-                                    border-bottom-0">
-                                    <a href="https://www.instagram.com/abpframework/" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right
-                                            text-dark"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12  d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-secondary mb-4">
+                        <svg width="60" height="60" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                                <path d="M16,15.6315789 L16,12 C16,10.3431458 14.6568542,9 13,9 L6.16183229,9 L6.16183229,5.52631579 C6.16183229,4.13107011 7.29290239,3 8.68814808,3 L20.4776218,3 C21.8728674,3 23.0039375,4.13107011 23.0039375,5.52631579 L23.0039375,13.1052632 L23.0206157,17.786793 C23.0215995,18.0629336 22.7985408,18.2875874 22.5224001,18.2885711 C22.3891754,18.2890457 22.2612702,18.2363324 22.1670655,18.1421277 L19.6565168,15.6315789 L16,15.6315789 Z" fill="currentColor"></path>
+                                <path d="M1.98505595,18 L1.98505595,13 C1.98505595,11.8954305 2.88048645,11 3.98505595,11 L11.9850559,11 C13.0896254,11 13.9850559,11.8954305 13.9850559,13 L13.9850559,18 C13.9850559,19.1045695 13.0896254,20 11.9850559,20 L4.10078614,20 L2.85693427,21.1905292 C2.65744295,21.3814685 2.34093638,21.3745358 2.14999706,21.1750444 C2.06092565,21.0819836 2.01120804,20.958136 2.01120804,20.8293182 L2.01120804,18.32426 C1.99400175,18.2187196 1.98505595,18.1104045 1.98505595,18 Z M6.5,14 C6.22385763,14 6,14.2238576 6,14.5 C6,14.7761424 6.22385763,15 6.5,15 L11.5,15 C11.7761424,15 12,14.7761424 12,14.5 C12,14.2238576 11.7761424,14 11.5,14 L6.5,14 Z M9.5,16 C9.22385763,16 9,16.2238576 9,16.5 C9,16.7761424 9.22385763,17 9.5,17 L11.5,17 C11.7761424,17 12,16.7761424 12,16.5 C12,16.2238576 11.7761424,16 11.5,16 L9.5,16 Z" fill="currentColor" opacity="0.3"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h6 class="font-weight-bold mb-3">实时互动沟通平台</h6>
+                    <p class="text-muted mb-0">我们深知在瞬息万变的商业环境中，及时有效的沟通是推动业务成功的关键。为此，我们构建了一个先进的实时互动沟通平台，旨在无缝连接您的团队、合作伙伴和客户，确保信息流畅无阻。<br /></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12  d-flex align-items-stretch">
+            <div class="card">
+                <div class="card-body">
+                    <div class="text-info mb-4">
+                        <svg width="60" height="60" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                                <path d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z" fill="currentColor" opacity="0.3"></path>
+                                <path d="M14.5,11 C15.0522847,11 15.5,11.4477153 15.5,12 L15.5,15 C15.5,15.5522847 15.0522847,16 14.5,16 L9.5,16 C8.94771525,16 8.5,15.5522847 8.5,15 L8.5,12 C8.5,11.4477153 8.94771525,11 9.5,11 L9.5,10.5 C9.5,9.11928813 10.6192881,8 12,8 C13.3807119,8 14.5,9.11928813 14.5,10.5 L14.5,11 Z M12,9 C11.1715729,9 10.5,9.67157288 10.5,10.5 L10.5,11 L13.5,11 L13.5,10.5 C13.5,9.67157288 12.8284271,9 12,9 Z" fill="currentColor"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h6 class="font-weight-bold mb-3">数据安全与隐私保护</h6>
+                    <p class="text-muted mb-0">在数字时代，数据安全已成为企业成功和客户信任的基石。我们深知数据对于您的业务至关重要，因此，我们采取了多层次的安全措施，确保您的数据得到最高级别的保护。</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<section>
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- BEGIN COPYRIGHT -->
+                <div class="col-md-6 col-sm-6 padding-top-10">
+                    2024 © CDST. ALL Rights Reserved. <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+                </div>
+                <!-- END COPYRIGHT -->
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+</section>

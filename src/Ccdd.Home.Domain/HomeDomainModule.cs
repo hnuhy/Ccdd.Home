@@ -17,6 +17,7 @@ using Volo.Abp.Emailing;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
 using Volo.Abp.TenantManagement;
+using Volo.CmsKit;
 
 namespace Ccdd.Home;
 
@@ -35,7 +36,8 @@ namespace Ccdd.Home;
     typeof(AbpTenantManagementDomainModule),
     typeof(BlobStoringDatabaseDomainModule)
     )]
-public class HomeDomainModule : AbpModule
+[DependsOn(typeof(CmsKitDomainModule))]
+    public class HomeDomainModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
