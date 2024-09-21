@@ -1,0 +1,89 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.Account": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.3.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Ccdd.Home.Application": {
+      "path": "src/Ccdd.Home.Application/Ccdd.Home.Application.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.Application.Tests": {
+      "path": "test/Ccdd.Home.Application.Tests/Ccdd.Home.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.Domain.Shared": {
+      "path": "src/Ccdd.Home.Domain.Shared/Ccdd.Home.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.Application.Contracts": {
+      "path": "src/Ccdd.Home.Application.Contracts/Ccdd.Home.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.HttpApi": {
+      "path": "src/Ccdd.Home.HttpApi/Ccdd.Home.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.HttpApi.Client": {
+      "path": "src/Ccdd.Home.HttpApi.Client/Ccdd.Home.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.Web": {
+      "path": "src/Ccdd.Home.Web/Ccdd.Home.Web.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.Web.Tests": {
+      "path": "test/Ccdd.Home.Web.Tests/Ccdd.Home.Web.Tests.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.EntityFrameworkCore.Tests": {
+      "path": "test/Ccdd.Home.EntityFrameworkCore.Tests/Ccdd.Home.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.EntityFrameworkCore": {
+      "path": "src/Ccdd.Home.EntityFrameworkCore/Ccdd.Home.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.TestBase": {
+      "path": "test/Ccdd.Home.TestBase/Ccdd.Home.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.Domain.Tests": {
+      "path": "test/Ccdd.Home.Domain.Tests/Ccdd.Home.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Ccdd.Home.HttpApi.Client.ConsoleTestApp/Ccdd.Home.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Ccdd.Home.DbMigrator": {
+      "path": "src/Ccdd.Home.DbMigrator/Ccdd.Home.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Ccdd.Home.Domain": {
+      "path": "src/Ccdd.Home.Domain/Ccdd.Home.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

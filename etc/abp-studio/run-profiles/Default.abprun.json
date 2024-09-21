@@ -1,0 +1,10 @@
+﻿{
+  "applications": {
+    "Ccdd.Home.Web": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44393",
+      "path": "../../../src/Ccdd.Home.Web/Ccdd.Home.Web.csproj",
+      "kubernetesService": ".*-web$"
+    }
+  }
+}
